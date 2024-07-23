@@ -1,7 +1,18 @@
-import 'package:ai_teacher_chatbot/chat_screen.dart';
+import 'package:ai_teacher_chatbot/locator.dart';
 import 'package:flutter/material.dart';
- 
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+import 'package:ai_teacher_chatbot/ui/views/chat_screen.dart';
+
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  setupLocator();
+
   runApp(const MyApp());
 }
  
@@ -10,9 +21,12 @@ class MyApp extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Teacher Helper',
-      home: ChatScreen(),
+    return MaterialApp(
+      title: 'TeacherHelper',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const ChatScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

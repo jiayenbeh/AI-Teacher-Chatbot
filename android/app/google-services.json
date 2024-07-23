@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "71049643952",
+    "project_id": "teacher-chatbot-429509",
+    "storage_bucket": "teacher-chatbot-429509.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71049643952:android:f6e02e3c7f76ed7de67875",
+        "android_client_info": {
+          "package_name": "com.example.ai_teacher_chatbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAo4NzVGI9Wy9_r6yVtdKUN4QcPkWFBJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
