@@ -4,5 +4,3 @@ class Message {
 
   Message({required this.isSender, required this.msg});
 }
-
-List<Message> chatHistory = [];
