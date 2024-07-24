@@ -3,6 +3,7 @@ import 'package:ai_teacher_chatbot/services/authentication_service.dart';
 import 'package:ai_teacher_chatbot/services/firestore_service.dart';
 import 'package:ai_teacher_chatbot/services/navigation_service.dart';
 import 'package:ai_teacher_chatbot/services/cloud_storage_service.dart';
+import 'package:ai_teacher_chatbot/services/dialog_service.dart';
 
 GetIt locator = GetIt.instance;
 
@@ -11,4 +12,5 @@ void setupLocator() {
   locator.registerLazySingleton(() => AuthenticationService());
   locator.registerLazySingleton(() => FirestoreService());
   locator.registerLazySingleton(() => CloudStorageService());
+  locator.registerLazySingleton(() => DialogService());
 }

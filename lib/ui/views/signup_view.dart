@@ -1,6 +1,6 @@
 import 'package:ai_teacher_chatbot/ui/shared/ui_helpers.dart';
 import 'package:ai_teacher_chatbot/ui/widgets/busy_button.dart';
-import 'package:ai_teacher_chatbot/ui/widgets/expansion_list.dart';
+// import 'package:ai_teacher_chatbot/ui/widgets/expansion_list.dart';
 import 'package:ai_teacher_chatbot/ui/widgets/input_field.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
@@ -46,11 +46,11 @@ class SignUpView extends StatelessWidget {
                 controller: passwordController,
                 additionalNote: 'Password has to be a minimum of 6 characters.',
               ),
-              verticalSpaceSmall,
-              ExpansionList<String>(
-                  items: const ['Admin', 'User'],
-                  title: model.selectedRole,
-                  onItemSelected: model.setSelectedRole),
+              // verticalSpaceSmall,
+              // ExpansionList<String>(
+              //     items: const ['Admin', 'User'],
+              //     title: model.selectedRole,
+              //     onItemSelected: model.setSelectedRole),
               verticalSpaceMedium,
               Row(
                 mainAxisSize: MainAxisSize.max,

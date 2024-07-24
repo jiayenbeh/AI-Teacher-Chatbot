@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
 class StartUpView extends StatelessWidget {
-  const StartUpView({required Key key}) : super(key: key);
+  const StartUpView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class StartUpView extends StatelessWidget {
               SizedBox(
                 width: 300,
                 height: 100,
-                child: Image.asset('assets/images/icon_large.png'),
+                child: Image.asset('assets/images/appLogo.png'),
               ),
               CircularProgressIndicator(
                 strokeWidth: 3,

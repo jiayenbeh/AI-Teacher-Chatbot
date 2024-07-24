@@ -30,7 +30,7 @@ class AuthenticationService {
     required String email,
     required String password,
     required String fullName,
-    required String role,
+    // required String role,
   }) async {
     try {
       var authResult = await _firebaseAuth.createUserWithEmailAndPassword(
@@ -43,7 +43,7 @@ class AuthenticationService {
         id: authResult.user!.uid,
         email: email,
         fullName: fullName,
-        userRole: role,
+        // userRole: role,
       );
 
       await _firestoreService.createUser(_currentUser);
@@ -56,11 +56,7 @@ class AuthenticationService {
 
   Future<bool> isUserLoggedIn() async {
     var user = _firebaseAuth.currentUser;
-    
-    if (user != null){
-      await _populateCurrentUser(user);
-    }
-
+    await _populateCurrentUser(user);
     return user != null;
   }
 

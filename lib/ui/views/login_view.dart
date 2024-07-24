@@ -25,7 +25,7 @@ class LoginView extends StatelessWidget {
               children: <Widget>[
                 SizedBox(
                   height: 150,
-                  child: Image.asset('assets/images/title.png'),
+                  child: Image.asset('assets/images/appLogo.png'),
                 ),
                 InputField(
                   placeholder: 'Email',
