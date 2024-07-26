@@ -5,6 +5,8 @@ class GroqAiService {
 
   Future getLLaMA3Response(String prompt) async {
     const String endpoint = 'https://api.groq.com/openai/v1/chat/completions';
+    const String apiKey = 'your_api_key';
+
     final Map<String, dynamic> requestBody = {
       "model": "llama3-70b-8192",
       "messages":[{
@@ -22,7 +24,7 @@ class GroqAiService {
       "stream":false};
 
     final Map<String, String> headers = {
-      "Authorization": "Bearer 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",
+      "Authorization": "Bearer $apiKey",
       "Content-Type": "application/json",
       "Accept": "application/json"
     };
